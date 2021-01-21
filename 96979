@@ -1,0 +1,19 @@
+count = 10
+from random import randint
+for i in range(10):
+    y = randint(1,101)
+    x = randint(1,101)
+    m=y+x
+    print('the sum of',y,'+',x,end='')
+    z=eval(input('='))
+    if m==z:
+        print('corect')   
+    else:
+        print('incorect the answer is',m)
+        count = count-1
+    
+
+if count == 10:
+     print('YOU HAVE ',count,'/10')
+     print('YOU HAVE REACHED LEVEL 1')
+     print('DO YOU WANT TO CONTINU?')
